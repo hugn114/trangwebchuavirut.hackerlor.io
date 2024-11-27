@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Mockup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: white;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .search-bar {
+            display: flex;
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+
+        .header input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+        }
+
+        .header button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #444;
+            color: white;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        .header button:hover {
+            background-color: #333;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #fff;
+            border-right: 1px solid #ddd;
+            position: fixed;
+            top: 50px;
+            bottom: 0;
+            overflow-y: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 15px 20px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Main content */
+        .main {
+            margin-left: 200px;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .video-card {
+            display: flex;
+            margin-bottom: 20px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-thumbnail {
+            width: 150px;
+            height: 100px;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .video-info {
+            margin-left: 15px;
+        }
+
+        .video-info h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .video-info p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">YouTube</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm">
+            <button>Tìm kiếm</button>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#">Trang chủ</a>
+        <a href="#">Thịnh hành</a>
+        <a href="#">Kênh đăng ký</a>
+        <a href="#">Thư viện</a>
+        <a href="#">Lịch sử</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+        <div class="video-card">
+            <div class="video-thumbnail"></div>
+            <div class="video-info">
+                <h3>Tiêu đề video 1</h3>
+                <p>Kênh: Channel A</p>
+                <p>Lượt xem: 1M - 1 ngày trước</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-thumbnail"></div>
+            <div class="video-info">
+                <h3>Tiêu đề video 2</h3>
+                <p>Kênh: Channel B</p>
+                <p>Lượt xem: 500K - 2 ngày trước</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <div class="video-thumbnail"></div>
+            <div class="video-info">
+                <h3>Tiêu đề video 3</h3>
+                <p>Kênh: Channel C</p>
+                <p>Lượt xem: 200K - 5 ngày trước</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
